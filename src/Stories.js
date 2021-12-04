@@ -3,7 +3,7 @@ export default function Stories(){
     //criando array com as fotos 
     const avatares = ["9gag","adorable_animals", "bad.vibes.memes","barked","catanacomics","nathanwpylestrangeplanet"];
 
-    const paths = avatares.map(avatar => `/assets/img/${avatar}.sgv`)
+    const paths = avatares.map(avatar => `assets/img/${avatar}.svg`)
 
     const contasStories = {
         figura: paths,
@@ -14,7 +14,7 @@ export default function Stories(){
 
 return(
     <div class = "story">
-
+      
        {paths.map(path => 
        <div class = "story"> <img src = {path} alt = ":("/>
        </div>)}
