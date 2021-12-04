@@ -36,6 +36,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  background-color: red;
 }
 
 .navbar .container > * {
@@ -80,6 +81,7 @@ body {
   width: 935px;
   margin: 0 auto;
   margin-top: 88px;
+  background-color: chartreuse;
 }
 
 .esquerda {
@@ -112,6 +114,7 @@ body {
   font-size: 12px;
   cursor: pointer;
   margin-right: 10px;
+  background-color: blue;
 }
 
 .story .imagem {

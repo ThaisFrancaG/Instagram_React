@@ -1,4 +1,6 @@
  export default function Post(){
+
+const avatarConta = ["assets/img/meowed.svg" ]
     return(
         <div class = "post">
 <Topo avatarConta = "assets/img/meowed.svg" 
