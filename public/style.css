@@ -36,7 +36,6 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  background-color: red;
 }
 
 .navbar .container > * {
@@ -81,7 +80,7 @@ body {
   width: 935px;
   margin: 0 auto;
   margin-top: 88px;
-  background-color: chartreuse;
+  
  
 }
 
@@ -103,6 +102,7 @@ body {
   padding: 0 18px;
   overflow: hidden;
   position: relative;
+ 
 }
 
 .story {
@@ -115,7 +115,7 @@ body {
   font-size: 12px;
   cursor: pointer;
   margin-right: 10px;
-  background-color: blue;
+ 
 }
 
 .story .imagem {
@@ -159,7 +159,6 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 18px;
-  background-color: aquamarine;
 }
 
 .post .topo {
@@ -168,13 +167,11 @@ body {
   padding: 13px 16px;
   font-size: 14px;
   font-weight: 500;
-  background-color: #139EF2;
 }
 
 .post .topo .usuario, .post .topo .acoes {
   display: flex;
   align-items: center;
-  background-color: brown;
 }
 
 .post .topo img {
@@ -284,6 +281,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
 }
 
 .sidebar .sugestoes .sugestao .usuario .texto :last-child {
@@ -391,10 +389,11 @@ body {
 
   .logo-mobile, .instagram-mobile {
     display: flex !important;
+    justify-content: space-between;
   }
 
   .instagram-mobile {
     position: relative;
-    top: 4px;
+    top: 4px
   }
 }

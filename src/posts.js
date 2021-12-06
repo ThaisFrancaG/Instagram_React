@@ -1,16 +1,20 @@
  export default function Post(){
 
-const avatarConta = ["assets/img/meowed.svg" ]
+
     return(
+        <div>
         <div class = "post">
+
 <Topo avatarConta = "assets/img/meowed.svg" 
     tituloConta = "Meowed"/>
-<Foto foto = "assets/img/dog.svg" fotoTitulo="gato-telefone.svg" />
+<Foto foto = "assets/img/gato-telefone.svg" fotoTitulo="gato-telefone.svg" />
 <Rodape curtidasFoto = "assets/img/respondeai.svg" curtidasNome = "RespondeAí" />
-
+</div>
+<div class = "post">
 <Topo avatarConta = "assets/img/barked.svg" tituloConta = "Barked"/>
 <Foto foto = "assets/img/dog.svg" fotoTitulo="dog.svg" />
 <Rodape curtidasFoto = "assets/img/respondeai.svg" curtidasNome = "RespondeAí" />
+        </div>
         </div>
     )
  }
@@ -19,8 +23,10 @@ const avatarConta = ["assets/img/meowed.svg" ]
  function Topo(props){
      return(
          <header class = "topo">
+         <div class = "usuario"> 
          <img src ={props.avatarConta} alt  = "Nao encontrado"/>
-         <span class = "usuario">{props.tituloConta}</span>
+         <strong>{props.tituloConta}</strong>
+        </div>
          <span class = "acoes"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></span>
          </header>
      )
@@ -35,13 +41,17 @@ const avatarConta = ["assets/img/meowed.svg" ]
 function Rodape(props){
     return(<footer class = "fundo">
         <div class = "acoes">
+            <div>
         <ion-icon name="heart-outline"></ion-icon>
         <ion-icon name="chatbubble-outline"></ion-icon>
         <ion-icon name="paper-plane-outline"></ion-icon>
+            </div>
+        <ion-icon name="paper-plane-outline"></ion-icon>
         </div>
+        
         <div class = "curtidas"> 
         <img src = {props.curtidasFoto} alt = "nao encontrado" />
-        <span>Curtido por {props.curtidasNome} e outras 1000 pessoas</span>
+        <span>Curtido por <strong>{props.curtidasNome}</strong> e <strong>outras 1000 pessoas</strong></span>
         </div>
 
         
